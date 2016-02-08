@@ -13,7 +13,7 @@ import static java.util.Objects.isNull;
 public class AssertHelper {
 
     public static void verifyEntriesInTable(String tableName, DataTable table) {
-        List<Map<String, String>> maps = table.asMaps();
+        List<Map<String, String>> maps = table.asMaps(String.class, String.class);
         List<Map<String, Object>> results = getResults(tableName, maps);
 
         for (Map<String, String> map : maps) {
@@ -24,7 +24,7 @@ public class AssertHelper {
     }
 
     public static void verifyEntriesInTableInOrder(String tableName, DataTable table) {
-        List<Map<String, String>> maps = table.asMaps();
+        List<Map<String, String>> maps = table.asMaps(String.class, String.class);
         List<Map<String, Object>> results = getResults(tableName, maps);
 
         if (maps.size() != results.size()) {
