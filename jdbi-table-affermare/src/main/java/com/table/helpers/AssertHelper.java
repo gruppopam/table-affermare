@@ -1,7 +1,7 @@
 package com.table.helpers;
 
 import cucumber.api.DataTable;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Collection;
 import java.util.List;

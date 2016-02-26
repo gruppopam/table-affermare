@@ -7,7 +7,7 @@
     <groupId>cucumber-jvm-plugin</groupId>
     <artifactId>table-affermare</artifactId>
     <packaging>pom</packaging>
-    <version>1.1</version>
+    <version>1.3</version>
     <modules>
         <module>jdbi-table-affermare</module>
     </modules>
@@ -15,7 +15,7 @@
     <properties>
         <cucumber.version>1.2.4</cucumber.version>
         <junit.version>4.10</junit.version>
-        <dropwizard.version>0.7.0</dropwizard.version>
+        <dropwizard.version>0.9.2</dropwizard.version>
     </properties>
 
     <dependencies>
